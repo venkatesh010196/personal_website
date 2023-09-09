@@ -1,0 +1,16 @@
+/* Header.css */
+.header-container {
+    text-align: center; /* Center-align the content horizontally */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #333; /* Background color for the header */
+    color: white; /* Text color */
+  }
+  
+  .header-container h1 {
+    margin: 0; /* Remove default margin for h1 */
+  }
+  
+  .header-container p {
+    margin: 10px 0; /* Add some margin to the paragraph for spacing */
+  }
+  

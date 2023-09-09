@@ -1,0 +1,22 @@
+/* Projects.css */
+#projects {
+    text-align: center; /* Center-align the content */
+  }
+  
+  .project-card {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto; /* Center the card horizontally and add margin for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1000px; /* Adjust the maximum width of the card */
+    text-align: left;
+  }
+  
+  .project-card h3 {
+    margin-top: 0;
+  }
+  
+  /* Add more styles as needed */
+  

@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body {
+  background-color: rgb(159, 159, 168);
+  /* You can adjust the shade of navy blue by specifying a color code or name here */
+  /* Example color codes: #000080, #001f3f */
+  /* Example color name: darkblue */
+}
+

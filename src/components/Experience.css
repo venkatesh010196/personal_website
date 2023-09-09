@@ -1,0 +1,27 @@
+/* Experience.css */
+.experience-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Adjust the height based on your layout */
+    padding: 0 20px; /* Add space on both sides */
+  }
+  
+  .experience-table {
+    width: 100%;
+    border-collapse: collapse; /* This removes default table spacing */
+    max-width: 800px; /* Adjust the maximum width of the table */
+    margin: 0 auto; /* Center the table horizontally */
+  }
+  
+  .experience-table th,
+  .experience-table td {
+    border: 1px solid #ddd; /* Add a 1px solid border to table cells */
+    padding: 8px; /* Add some padding for better spacing */
+  }
+  
+  .experience-table th {
+    background-color: #f2f2f2; /* Add a background color to table header cells */
+    text-align: center;
+  }
+  
