@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import MyImage from './components/MyImage'; 
 import Skills from './components/Skills';
+import Blogs from './components/Blogs';
 import './App.css'; // Import a CSS file for styling
 import Resume from './components/Resume'; // Import your Resume component
 import LinkedIn from './components/LinkedIn'; 
@@ -38,11 +39,14 @@ function App() {
             <li className="nav-item">
               <Link to="/skills" className="nav-link">Skills</Link>
             </li>
+            <li className="nav-item">
+              <Link to="/Blogs" className="nav-link">Blogs</Link>
+            </li>
           </ul>
         </nav>
         <div className="additional-links">
- <Resume className="additional-classItems" /> 
-<LinkedIn className="additional-classItems" />
+ <Resume  /> 
+<LinkedIn  />
 
   </div>
         
@@ -53,6 +57,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/Skills" element={<Skills/>} />
+          <Route path="/Blogs" element={<Blogs/>} />
           
         </Routes>
         

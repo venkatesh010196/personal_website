@@ -2,7 +2,7 @@ import React from 'react';
 
 function Resume() {
   return (
-    <a className="additional-classItems" href="./Resume.pdf" download="./Resume.pdf" target="_blank" rel="noopener noreferrer">
+    <a className="additional-classItems" href="https://drive.google.com/file/d/1QqjnH3K5WUt5c-HocJDnTlRpRmsImHJq/view?usp=drive_link" target='_blank' download>
       Resume
     </a>
   );

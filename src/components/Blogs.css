@@ -1,0 +1,37 @@
+/* Blogs.css */
+#blogs {
+    text-align: center; /* Center-align the content */
+  }
+  
+  .blog-card {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto; /* Center the card horizontally and add margin for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 1000px; /* Adjust the maximum width of the card */
+    text-align: left;
+  }
+  
+  .blog-card h3 {
+    margin-top: 0;
+  }
+  
+  .blog-card a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #007BFF; /* Customize the link background color */
+    color: #fff; /* Customize the link text color */
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .blog-card a:hover {
+    background-color: #0056b3; /* Change link background color on hover */
+    color: #fff; /* Change link text color on hover */
+  }
+  
+  /* Add more styles as needed */
+  
