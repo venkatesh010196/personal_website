@@ -14,7 +14,7 @@ function Blogs() {
     {
       name: 'Dog classifier',
       description: 'kaggle competetion',
-      url: 'https://github.com/yourusername/blog2',
+      url: 'https://github.com/venkatesh010196/Flower-classification-assignment/blob/main/flower-classification.ipynb',
     },
     // Add more blog objects as needed
   ];
