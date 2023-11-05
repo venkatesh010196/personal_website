@@ -7,8 +7,10 @@ function Blogs() {
     {
       name: 'Titanic passenger classification',
       description: 'kaggle competition',
-      url: 'https://github.com/venkatesh010196/classification_titanicdata/blob/6c8a9260afaed9ee20572b89ccb2c16e03e7526d/classification.ipynb',
+      url: 'https://github.com/venkatesh010196/classification_titanicdata/blob/main/classification.ipynb',
+
     },
+    
     {
       name: 'Dog classifier',
       description: 'kaggle competetion',
