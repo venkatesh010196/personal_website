@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titanic Passenger Classification Assignment</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      section {
+        max-width: 800px;
+        margin: 100px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #333;
+      }
+
+      p {
+        color: #555;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Titanic Passenger Classification Assignment</h1>
+
+      <p>
+        In this blog post, I'll discuss my approach and findings from the
+        Titanic Passenger Classification assignment. The goal was to predict
+        whether a passenger survived or not based on various features.
+      </p>
+      <img src="./titanic_image.png" alt="Description of Image 1" />
+      <!-- Content Section -->
+      <h3>Introduction</h3>
+      <p>
+        In the field of data science, the Titanic dataset serves as a classic
+        playground for predictive modeling. The goal is to develop a model that
+        predicts whether a passenger survived or not based on various
+        attributes. This exercise not only hones our data science skills but
+        also allows us to delve into the historical context of the Titanic
+        disaster.
+      </p>
+
+      <h3>Data exploration and visualization</h3>
+      <p>
+        Before diving into the code, let's explore the dataset and gain insights
+        into its structure. Visualization tools like Matplotlib and Seaborn can
+        help us understand the distribution of features, identify patterns, and
+        spot potential correlations. By visualizing aspects like passenger
+        demographics, ticket class, and survival rates, we can form initial
+        hypotheses and guide our preprocessing steps.
+      </p>
+      <img src="./data_exploraration.png" alt="Description of Image 2" />
+      <img src="./data_visualisation1.png" alt="Description of Image 3" />
+      <img src="./data_visualization2.png" alt="Description of Image 4" />
+
+      <h3>Data pre-processing</h3>
+      <p>
+        Effective data preprocessing is crucial for building robust machine
+        learning models. In this step, we handle missing values, normalize and
+        standardize attributes if needed, and encode nominal and ordinal
+        attributes. Additionally, we remove irrelevant attributes such as 'ID',
+        'Ticket', and 'Name' that may not contribute significantly to the
+        predictive power of the model.
+      </p>
+      <img src="./data_preprocessing.png" alt="Description of Image 5" />
+
+      <!-- Conclusion Section -->
+      <h3>Classification models and hyperparamete tuning</h3>
+      <p>
+        Now, let's experiment with various classification models to identify the
+        most suitable one for our task. We'll utilize a set of estimators,
+        including Logistic Regression, Decision Tree Classifier, Random Forest
+        Classifier, Support Vector Classifier (SVC), Gaussian Naive Bayes, and
+        XGBoost. To ensure robustness, we'll explore different hyperparameters,
+        specifically focusing on the number of splits for cross-validation with
+        values of 5 and 10.
+      </p>
+      <img src="./sample_photo.png" alt="Description of Image 6" />
+      <h3>Results and Conclusion</h3>
+      <p>
+        In conclusion, our Titanic classification assignment journey unveiled
+        valuable insights into data science and machine learning. After thorough
+        experimentation, the Decision Tree Classifier emerged as the top
+        performer, boasting the highest accuracy with 10 splits for
+        cross-validation.This exercise emphasizes the importance of meticulous
+        model selection and hyperparameter tuning. The skills developed here
+        extend beyond the Titanic dataset, providing a foundation for solving
+        diverse real-world problems.
+      </p>
+      <h3>Results for n = 10</h3>
+      <img src="./results_10splits.png" alt="Description of Image 7" />
+      <h3>Results for n = 5</h3>
+      <img src="./results_split5_1.png" alt="Description of Image 8" />
+      <img src="./result_split5_2.png" alt="Description of Image 9" />
+    </section>
+  </body>
+</html>
