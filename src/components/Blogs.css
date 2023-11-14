@@ -33,5 +33,21 @@
     color: #fff; /* Change link text color on hover */
   }
   
+
+  .blog-card button {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #03fc94;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+    transition: background-color 0.3s; /* Add a smooth transition for background color */
+}
+
+.blog-card button:hover {
+    background-color: #02d585; /* Change button background color on hover */
+}
   /* Add more styles as needed */
   

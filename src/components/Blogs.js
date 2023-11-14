@@ -6,18 +6,22 @@ function Blogs() {
   const blogsData = [
     {
       name: 'Titanic passenger classification',
-      description: 'kaggle competition',
-      url: 'https://github.com/venkatesh010196/classification_titanicdata/blob/main/classification.ipynb',
-
+      description: 'Term project',
+      filename: 'blog1.html',
     },
-    
     {
       name: 'Flower classifier',
-      description: 'kaggle competetion',
-      url: 'https://github.com/venkatesh010196/Flower-classification-assignment/blob/main/flower-classification.ipynb',
+      description: 'Assignment-1',
+      filename: 'blog2.html',
     },
     // Add more blog objects as needed
   ];
+
+  // Function to open a blog in a new tab
+  const openBlogInNewTab = (filename) => {
+    const blogUrl = process.env.PUBLIC_URL + `/blogs/titanic_data.html`;
+    window.open(blogUrl, '_blank');
+  };
 
   return (
     <section id="blogs">
@@ -26,9 +30,12 @@ function Blogs() {
         <div key={index} className="blog-card">
           <h3>{blog.name}</h3>
           <p>{blog.description}</p>
-          <a href={blog.url} target="_blank" rel="noopener noreferrer">
-            View Blog
+          <a className="shared-link" href={blog.url} target="_blank" rel="noopener noreferrer">
+            View jupyter Notebook
           </a>
+          <button onClick={() => openBlogInNewTab(blog.filename)}>
+            View Blog
+          </button>
         </div>
       ))}
       {/* Add more blog cards as needed */}
