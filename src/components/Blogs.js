@@ -59,14 +59,14 @@ function Blogs() {
       description: 'Term project',
       filename: 'titanic_data.html',
       folder: 'titanic_blog',
-      url: '' // ADD THE URL IF AVAILABLE
+      url: 'https://github.com/venkatesh010196/classification_titanicdata/blob/main/classification.ipynb' 
     },
     {
       name: 'Flower classifier',
       description: 'Assignment-1',
       filename: 'flower_classification.html',
       folder: 'flower_classification_blog',
-      url: '' // ADD THE URL IF AVAILABLE
+      url: 'https://github.com/venkatesh010196/Flower-classification-assignment' 
     },
     // Add more blog objects as needed
   ];
