@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower classification(104 types) using trasfer learning</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      section {
+        max-width: 800px;
+        margin: 100px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #333;
+      }
+
+      p {
+        color: #555;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Flower image classification(104 types) using trasfer learning</h1>
+
+      <p>
+        In this blog post, we explore the application of transfer learning for
+        image classification. The goal is to build an accurate yet lightweight
+        model suitable for deployment in resource-constrained environments like
+        mobile devices and Arduino boards.
+      </p>
+
+      <h3>Model Architecture</h3>
+      <p>
+        We adopted a transfer learning approach experimenting with VGG16,
+        MobileNet and InceptionV3 models, well-known architectures pre-trained
+        on ImageNet. The model consists of a base with frozen convolutional
+        layers and a custom head for classification. This allows us to leverage
+        pre-learned features while adapting the model to our specific task.
+      </p>
+
+      <img
+        src="./defining_the_model.png"
+        alt="Training and Validation Accuracy Plot"
+      />
+
+      <h3>Learning Rate Schedule</h3>
+      <p>
+        To optimize training, i used an exponential learning rate schedule. The
+        schedule gradually increases the learning rate, maintains a constant
+        rate for a specified duration, and then exponentially decays it. This
+        dynamic learning rate helps the model converge faster and achieve better
+        accuracy.
+      </p>
+
+      <img src="./vgg16.png" alt="Training and Validation Accuracy Plot" />
+      <img src="./mobilenet.png" alt="Training and Validation Accuracy Plot" />
+      <img src="./inception.png" alt="Training and Validation Accuracy Plot" />
+
+      <h3>Training Results</h3>
+      <p>
+        After training the model, i analyzed the results. Transfer learning
+        outperformed training from scratch, with InceptionV3 achieving the
+        highest validation accuracy of 0.9378. For resource-efficient
+        deployment, we recommend using MobileNet, which has significantly fewer
+        parameters and still achieves an accuracy of 0.73.
+      </p>
+
+      <h3>Key Point</h3>
+      <p>
+        My crucial consideration was building a model not only for accuracy but
+        also for lightweight and immediate inferences in computationally
+        compromised environments. This aligns with the goal of deploying the
+        model on mobile devices and Arduino boards, where computational
+        resources are limited.
+      </p>
+
+      <h2>Training and Validation Accuracy Plot</h2>
+
+      <h3>vgg16 Plot(train vs Validation)</h3>
+      <img src="./vgg_graph.png" alt="Training and Validation Accuracy Plot" />
+      <h3>MobileNet Plot(train vs Validation)</h3>
+
+      <img
+        src="./mobile_net_graph.png"
+        alt="Training and Validation Accuracy Plot"
+      />
+      <h3>InceptionV3(train vs Validation) Plot</h3>
+      <img
+        src="./inception_graph.png"
+        alt="Training and Validation Accuracy Plot"
+      />
+      <h3>Conclusion</h3>
+      <p>
+        In conclusion, this project demonstrates the effectiveness of transfer
+        learning for image classification. The choice of a suitable pre-trained
+        model and careful consideration of the learning rate schedule contribute
+        to achieving a balance between accuracy and model efficiency.
+      </p>
+    </section>
+  </body>
+</html>
