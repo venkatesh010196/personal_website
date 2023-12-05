@@ -68,6 +68,13 @@ function Blogs() {
       folder: 'flower_classification_blog',
       url: 'https://github.com/venkatesh010196/Flower-classification-assignment' 
     },
+    {
+      name: 'naive-bayes classifier to detect essay generation(ai vs human)',
+      description: 'Assignment-2',
+      filename: 'naive_classifier.html',
+      folder: 'naive_classifier_blog',
+      url: 'https://github.com/venkatesh010196/naive-bayes-classifier' 
+    }
     // Add more blog objects as needed
   ];
 
